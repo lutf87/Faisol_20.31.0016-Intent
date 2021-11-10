@@ -43,14 +43,14 @@
         android:id="@+id/btn_dial_number"
         android:layout_width="375sp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/btn_move_with_data"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/dial_number"
-        android:layout_below="@id/btn_move_with_data"
         android:background="#FFC0C0C0"
-        android:textSize="20sp"
+        android:fontFamily="@font/cambria"
+        android:text="@string/dial_number"
         android:textColor="#FFFF9900"
-        android:fontFamily="@font/cambria"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_move_activity_for_result"
@@ -64,5 +64,30 @@
         android:text="Move Activity For Result"
         android:textColor="#FFFF0000"
         android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Exit"
+        android:textSize="20sp"
+        android:fontFamily="@font/cambria"
+        android:textColor="#FFFF0000"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/btn_exit"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_move_activity_for_result"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:hint="@string/result_from_activity"
+        android:text="@string/result_from_activity"
+        android:textSize="34sp" />
 
 </RelativeLayout>

@@ -6,12 +6,16 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnMoveActivity: Button
     private lateinit var btnMoveWithData: Button
     private lateinit var btnDialActivity: Button
     private lateinit var btnMoveActivityForResult: Button
+    private lateinit var btnExit: Button
+    private lateinit var btnResultFromActivity: Button
+    private lateinit var tvResult: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +32,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btnMoveActivityForResult = findViewById(R.id.btn_move_activity_for_result)
         btnMoveActivityForResult.setOnClickListener(this)
+
+        btnResultFromActivity = findViewById(R.id.btn_move_activity_for_result)
+        btnResultFromActivity.setOnClickListener(this)
+
+        tvResult = findViewById(R.id.tv_result)
+        ColorReceived()
+
+        btnExit = findViewById(R.id.btn_exit)
+        btnExit.setOnClickListener(this)
+    }
+
+    private fun ColorReceived() {
+        val bundle = intent.extras
+        val color = bundle?.getString("Color")
+        tvResult.text = color
     }
 
     override fun onClick(v: View?) {
@@ -52,6 +71,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.btn_move_activity_for_result -> run{
                     val intent = Intent(this, MoveActivityForResult::class.java)
                     startActivity(intent)
+                }
+
+                R.id.btn_move_activity_for_result -> run{
+                    val intent = Intent(this, MoveActivityForResult::class.java)
+                    startActivity(intent)
+                }
+                R.id.btn_exit -> run{
+                    finish()
+                    System.exit(0)
                 }
             }
         }

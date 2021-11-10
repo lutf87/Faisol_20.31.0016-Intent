@@ -14,12 +14,62 @@
         android:layout_centerInParent="true"/>
 
     <TextView
+        android:id="@+id/txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Maaf, Untuk Sementara Belum Selesai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/cambria"
+        android:text="@string/choose_"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_color"
+        android:orientation="vertical"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rb_green"
+            android:text="@string/_1"
+            android:textSize="20sp"
+            android:fontFamily="@font/cambria"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rb_purple"
+            android:text="@string/_2"
+            android:textSize="20sp"
+            android:fontFamily="@font/cambria"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rb_orange"
+            android:text="@string/_3"
+            android:textSize="20sp"
+            android:fontFamily="@font/cambria"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_choose"
+        android:text="@string/choose"
+        android:background="@android:color/holo_red_light"
+        android:textColor="#FFFFFFFF"
         android:textSize="20sp"
         android:fontFamily="@font/cambria"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@id/rg_color"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 
     <Button

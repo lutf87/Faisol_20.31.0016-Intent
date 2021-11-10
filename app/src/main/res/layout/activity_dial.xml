@@ -13,15 +13,6 @@
         android:src="@drawable/error_android"
         android:layout_centerInParent="true"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Maaf, Untuk Sementara Belum Selesai"
-        android:textSize="20sp"
-        android:fontFamily="@font/cambria"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,5 +26,17 @@
         android:textColor="@android:color/holo_blue_bright"
         android:background="@android:color/holo_blue_light"
         android:id="@+id/btn_back"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="Call"
+        android:textSize="20sp"
+        android:fontFamily="@font/cambria"
+        android:textColor="@android:color/holo_blue_bright"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/btn_call"/>
 
 </RelativeLayout>
