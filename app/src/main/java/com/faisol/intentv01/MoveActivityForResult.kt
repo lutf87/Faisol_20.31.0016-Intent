@@ -21,7 +21,7 @@ class MoveActivityForResult : AppCompatActivity(), View.OnClickListener {
         btnBack = findViewById(R.id.btn_back)
         btnBack.setOnClickListener(this)
 
-        rgColor = findViewById(R.id.rg_color)
+        rgColor = findViewById(R.id.rg_something)
         btnChoose = findViewById(R.id.btn_choose)
         btnChoose.setOnClickListener{
             val selectedOption: Int = rgColor!!.checkedRadioButtonId
@@ -29,7 +29,7 @@ class MoveActivityForResult : AppCompatActivity(), View.OnClickListener {
 
             val intent = Intent(this, MainActivity::class.java)
             val bundle = Bundle()
-            bundle.putString("Color", radioButton.text as String?)
+            bundle.putString("Something", radioButton.text as String?)
             intent.putExtras(bundle)
             startActivity(intent)
         }

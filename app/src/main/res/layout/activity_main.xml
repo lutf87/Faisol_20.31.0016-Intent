@@ -15,16 +15,16 @@
         android:src="@drawable/ankot" />
 
     <Button
+        android:id="@+id/btn_move_activity"
         android:layout_width="375sp"
         android:layout_height="wrap_content"
-        android:text="@string/move_activity"
-        android:layout_marginTop="95dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/btn_move_activity"
-        android:background="#FFC0C0C0"
-        android:textSize="20sp"
+        android:layout_marginTop="95dp"
+        android:background="@color/teal_200"
+        android:fontFamily="@font/cambria"
+        android:text="@string/move_activity"
         android:textColor="@color/purple_700"
-        android:fontFamily="@font/cambria"/>
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="375sp"
@@ -34,8 +34,8 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/btn_move_with_data"
         android:layout_below="@id/btn_move_activity"
-        android:background="#FFC0C0C0"
-        android:textColor="#FF00FFFF"
+        android:background="@color/teal_200"
+        android:textColor="#FF969696"
         android:textSize="20sp"
         android:fontFamily="@font/cambria"/>
 
@@ -46,10 +46,10 @@
         android:layout_below="@id/btn_move_with_data"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:background="#FFC0C0C0"
+        android:background="@color/teal_200"
         android:fontFamily="@font/cambria"
         android:text="@string/dial_number"
-        android:textColor="#FFFF9900"
+        android:textColor="#FFFFFFFF"
         android:textSize="20sp" />
 
     <Button
@@ -59,7 +59,7 @@
         android:layout_below="@id/btn_dial_number"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:background="#FFC0C0C0"
+        android:background="@color/teal_200"
         android:fontFamily="@font/cambria"
         android:text="Move Activity For Result"
         android:textColor="#FFFF0000"

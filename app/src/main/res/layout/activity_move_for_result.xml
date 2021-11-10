@@ -27,7 +27,7 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rg_color"
+        android:id="@+id/rg_something"
         android:orientation="vertical"
         android:layout_below="@id/txt"
         android:layout_marginTop="@dimen/activity_vertical_margin">
@@ -69,7 +69,7 @@
         android:textColor="#FFFFFFFF"
         android:textSize="20sp"
         android:fontFamily="@font/cambria"
-        android:layout_below="@id/rg_color"
+        android:layout_below="@id/rg_something"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 
     <Button

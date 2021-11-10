@@ -3,6 +3,7 @@ package com.faisol.intentv01
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -45,8 +46,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun ColorReceived() {
         val bundle = intent.extras
-        val color = bundle?.getString("Color")
-        tvResult.text = color
+        val some = bundle?.getString("Something")
+        tvResult.text = some
     }
 
     override fun onClick(v: View?) {
@@ -79,6 +80,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.btn_exit -> run{
                     finish()
+                    closeContextMenu()
+                    closeOptionsMenu()
                     System.exit(0)
                 }
             }
